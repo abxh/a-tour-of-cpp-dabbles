@@ -12,7 +12,8 @@ void print(int);
 void print(double);
 void print(std::string);
 
-void user() {
+void user()
+{
     print(42);
     print(9.65);
     print("D is for Digital");
@@ -21,9 +22,8 @@ void user() {
 void print(int, double);
 void print(double, int);
 
-void user2() {
+void user2()
+{
     // print(0,0);
-    print(0.,0);
+    print(0., 0);
 }
-
-
