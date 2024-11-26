@@ -1,5 +1,7 @@
 namespace MyCode {
 
+namespace MySubCode {
+
 class complex {
 public:
     complex(double x, double i) {};
@@ -10,12 +12,13 @@ public:
 complex sqrt(complex);
 
 int main();
+} // namespace MySubCode
 
 } // namespace MyCode
 
 #include <iostream>
 
-int MyCode::main()
+int MyCode::MySubCode::main()
 {
     complex z{1, 2};
     auto z2 = sqrt(z);
@@ -25,5 +28,5 @@ int MyCode::main()
 
 int main()
 {
-    return MyCode::main();
+    return MyCode::MySubCode::main();
 }
